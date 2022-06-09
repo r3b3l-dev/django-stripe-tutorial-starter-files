@@ -55,7 +55,7 @@ ROOT_URLCONF = 'djstripetut.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/ 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,6 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STRIPE_PUBLIC_KEY = ""
-STRIPE_SECRET_KEY = ""
+STRIPE_PUBLIC_KEY = "pk_test_1234"
+STRIPE_SECRET_KEY = "sk_test_1234"
 STRIPE_WEBHOOK_SECRET = ""
